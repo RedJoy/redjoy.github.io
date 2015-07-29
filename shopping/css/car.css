@@ -1,0 +1,161 @@
+/*购物车页面新增样式*/
+.mid-car-box{
+	width: 990px;
+	margin:0 auto;
+	font-family: 'Hiragino Sans GB','Lantinghei SC','Microsoft Yahei',SimSun;
+}
+.mid-car-box a{color:#3c3c3c;}
+.mid-car-box a:hover{color:#E54346;}
+.cart-title{margin-top: 50px;}
+.cart-title-left{float: left;}
+.cart-title-right{float: right;height: 25px;line-height: 25px;}
+
+.switch-cart {overflow: hidden;height: 33px;}
+.btn-switch-cart {
+float: left;
+font-weight: 700;
+font-size: 16px;
+height: 33px;
+line-height: 1.1;
+text-align: center;
+padding: 0 0 15px;
+cursor: pointer;
+margin-left: -1px;
+}
+.number, .price {
+font-family: Verdana,Tahoma,arial;
+}
+.mid-car-box li {width: 130px;}
+
+.mid-car-box ol, ul {
+list-style: none;
+}
+.wrap-line {
+clear: both;
+background: #e6e6e6;
+height: 2px;
+position: relative;
+}
+.wrap-line .floater {
+background: #E01C1C;
+height: 2px;
+width: 0;
+position: absolute;
+top: 0;
+left: 0;
+overflow: hidden;
+}
+.cart-title-right .price {
+font-family: Arial,Verdana;
+font-weight: 700;
+margin-right: 5px;
+color: #f40;
+}
+.submit-btn {
+	clear: both;
+display: inline-block;
+width: 55px;
+color: #fff;
+background: #E54346;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+-ms-border-radius: 2px;
+border-radius: 2px;
+text-align: center;
+cursor: pointer;
+text-decoration: none;
+}
+/*购物车样式*/
+.mid-car-box form{width: 100%;}
+.show-table{width: 100%;margin: 2px auto;text-shadow:rgba(0,0,0,1);}
+.show-table .first-tr{width: 100%;height: 30px;vertical-align: middle;background:#212121;color:#fff;}
+.show-table {border-collapse: none;border:1px solid #5D5D5D; width: 100%;}
+.show-table table a{color:#444444;}
+.show-table table a:hover{color: #f55353;}
+.show-table tr{width:100px;height: 120px;border: 1px solid #f55353;border-radius: 4px;padding: 0;border-top:1px solid #E01C1C;}
+.show-table td{text-align: center;border-collapse:none;border-bottom:2px solid #e6e6e6;}
+.list-count{position: relative;float: left;margin-right:20px;}
+.list-count span{color:#f55353;font-size: 30px;font-weight: bold;}
+.reduce{width: 12px;height:12px;background: url(../images/reduce.png);cursor: pointer;margin: 8px;}
+.add{width:12px;height:12px;background: url(../images/add.png);cursor: pointer;margin: 8px;}
+.good-left{text-align:left;}
+table input{width: 20px;text-align: center;}
+.checkbox{width: 17px;height:17px;vertical-align: middle;}
+
+
+.address{
+	width: 100%;
+	height: 300px;
+	margin: 0 auto;
+	margin-top: 50px;
+	text-align: center;
+    border:1px solid #E3E5E6;
+}
+.modify-head{position: relative;}
+#order{border-left: 2px solid #e01c1c;}
+.order{display: block;}
+.address form{width: 100%;margin:0 auto;}
+.address table{
+	width: 80%;
+	border: none;
+	/*height: 100px;*/
+	line-height: 20px;
+	margin-left: 100px;
+}
+.address table tr，.modify-password table tr,.modify table tr{
+	height: 30px;
+}
+.address table tr,td{border: none;line-height: 30px;height: 30px;}
+.modify-password table tr,td{border: none;line-height: 30px;}
+.modify table tr,td{border: none;line-height: 30px;}
+.modify-head table tr,td{border: none;line-height: 30px;}
+.order table tr,td{ line-height: 30px;}
+.address td,.modify-password td,.modify td{
+	float: left; 
+	height:50px;
+}
+.text-style-left{text-align: left;}
+.text-style-right{text-align: right;}
+.must-fill{color: #e01c1c;text-align: center;vertical-align: middle;}
+select{border: 1px solid #E3E5E6;width:120px;}
+.address td input{
+	border: 1px solid #E3E5E6;
+	width:120px;
+	text-align: left;
+	padding: 6px;
+	color:#999;
+}
+.modify-password td input{width: 160px;}
+.modify td input{width: 160px;}
+.address .address-fill{width: 280px;}
+.address .name-fill{width: 100px;}
+.address .telphone-fill{width: 120px;}
+.address .btn,.modify-password .btn,.modify .btn,.modify-head .btn{
+	background: #f55353;
+	width:80px;
+	color:#fff; 
+	font-size:14px;
+	font-weight: bolder;
+	line-height: 20px;
+	cursor: pointer;
+	text-align: center;
+	margin-right: 20px;
+}
+.address .btn:hover,.modify-password .btn:hover,.modify .btn:hover{
+	background: #E01C1C;
+}
+.head-box{ width: 100%;text-align:center;margin: 50px auto;}
+.modify-head .btn{z-index: 0;position: absolute;background: #E01C1C;}
+.hide{opacity: 0;position: absolute;width: 80px;height:38px;z-index: 1;}
+.order table{  width: 100%; text-align: center; border:1px solid #E3E5E6;}
+.order table a{color: inherit;}
+.order table a:hover{color: #f55353;}
+.order table .first-tr{background: #222;color:#fff;}      
+.default-address{
+	width:30%;
+	line-height: 30px; 
+	text-align:left; 
+	margin-left: 100px; 
+	border:1px solid #5D5D5D;
+	padding: 20px;
+}
