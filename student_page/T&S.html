@@ -1,0 +1,381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="T&S.css">
+	<title>T&amp;S Assistance</title>
+
+
+<script type="text/javascript">
+function $(id){
+return typeof id==='string'?document.getElementById(id):id;}
+window.onload=function(){
+
+var titles=$('nav').getElementsByTagName('li'),//获取鼠标滑过或者点击的标签和要切换内容的元素
+    divs=$('content').getElementsByTagName('div');//$切换content下的内容
+    if(titles.length!=divs.length)//判断 如果滑过的标签和切换的内容如果不相同的话就 不执行
+	return;
+    for(var i=0;i<titles.length;i++){
+    	titles[i].id=i;
+    	titles[i].onclick=function(){
+    		for(var j=0;j<titles.length;j++){
+    			titles[j].className='';
+    			divs[j].style.display='none';
+    		}
+    		this.className='active';
+    		divs[this.id].style.display='block';
+        }    
+    } 
+}
+</script>
+
+</head>
+<body>
+    <div class="body">
+	<div class="header">
+		<div id="logo">
+		<img src="images/img0.png">
+	    </div>
+	    <div class="title">
+		<h1 style="font-family:微软雅黑;">T&S Assistance</h1>
+		<p>By student's page</p>
+	 </div>
+
+     <div class=" menu">
+         <a class="return" href="#">返回首页</a>
+         <img style="margin-bottom: -3px;" src="images/img26.png">
+         <a class="return" href="#">注销</a>
+     </div>
+
+	<div id="nav" class="nav">
+		<ul>
+		    <li class="active"><a href="#">首页</a></li>
+			<li><a href="#">消息查询</a></li>         
+			<li><a href="#">课表查询</a></li>
+            <li><a href="#">教师信息</a></li>
+            <li><a href="#">教师留言</a></li>
+			<li><a href="#">备忘录</a></li>
+			<li><a href="#">资料下载</a></li>
+		</ul>
+	</div>
+     </div>
+	<div id="content" class="content" style="">
+
+   <!--首页-->	
+
+	<div class="content_m"  >
+    <span class="content_sy_right">
+    <img src="images/student.png" style="height:500px;float:left;margin-top:30px;" >  
+    <span class="content_sy_left_u">
+     <table border="0" width="100%">
+         <tr><td colspan="2" align="center">个人信息</td></tr><tr></br></tr>
+         <tr><td align="right">姓名：</td><td align="left">窝窝</td></tr> <tr></br></tr>
+         <tr><td align="right">学号：</td><td align="left">201225222</td></tr>
+     </table>   
+    </span>
+    <h1 style="line-height:200%;font-size:50px;float:center;padding-top:150px;position:relative;left:130px;">Welcome！</h1>
+    <span class="content_sy_left_d"></span>
+    <span class="content_sy_left_m">
+     <table border="0" width="100%" >
+         <tr><td  align="center" colspan="2"><p>2014-2015第一学年</p></td></tr>
+         <tr><td align="center" colspan="2"><p>第X周教学</p></td></tr><tr></br></tr>
+         <tr><td align="center"><p>2014年XX年XX日</p></td></tr>
+     </table> 
+    </span>     
+    </span>
+    <span class="footer" style="margin-top:30px;line-height:30px;">Copyright@2014 T&S assistance</br>Dalian Nationalities University </span>
+    </div>
+
+    <!--消息查询-->	
+
+	<div class="content_m" style="display:none;">
+	<span class="content_left">
+    <span class="content_left_top"><h3>学校通知</h3></span>     
+    <ul class="content_left_con">
+        <li><a href="##">有一个地方</a></li>
+        <li><a href="##">匆匆那年</a></li>
+        <li><a href="##">明天，你好</a></li>
+        <li><a href="##">牛奶咖啡</a></li>
+        <li><a href="##">有一种力量叫傻瓜</a></li>
+        <li><a href="##">你好陌生人</a></li>
+        <li><a href="##">岁月神偷</a></li>
+        <li><a href="##">我全都相信</a></li>
+        <li><a href="##">她说</a></li>
+    </ul>
+    </span>
+
+	<span id="search">	
+    <form method="post" action=" ">
+			<fieldset>
+			<input id="s" type="text" name="s" placeholder="Search" />
+			<input id="x" type="submit" value="查询" action=""/>
+			</fieldset>
+		</form>
+	</span>
+
+	<span  class="content_right_up">
+     <span class="content_right_up_h"><h4>管理员通知</h4></span>  
+     <ul class="content_right_up_con">
+        <li><a href="##">黄昏</a></li>
+        <li><a href="##">糖果的味道</a></li>
+        <li><a href="##">毕业季又快来临啦</a></li>
+        <li><a href="##">差一步</a></li>
+        <li><a href="##">不是你的错</a></li>
+        <li><a href="##">啦啦啦啦哈哈</a></li>
+        <li><a href="##">小苹果呀小苹果呀</a></li>
+    </ul>  
+    </span>
+	<span  class="content_right_down">
+     <span class="content_right_up_t"><h4>教师通知</h4> </span> 
+     <span class="list">
+     <h6 class="tit">谢谨峰导员：</h6>
+     <p ><a href="#">参加线性代数重修的同学请在今天下午来我办公室。</a></p>
+     </span>
+
+     <span class="list">
+     <h6 class="tit">谢谨峰导员：</h6>
+     <p ><a href="#">参加线性代数重修的同学请在今天下午来我办公室。</a></p>
+     </span>
+
+     <span class="list">
+     <h6 class="tit">谢谨峰导员：</h6>
+     <p ><a href="#">参加线性代数重修的同学请在今天下午来我办公室。</a></p>
+     </span>
+
+     <span class="list">
+     <h6 class="tit">谢谨峰导员：</h6>
+     <p ><a href="#">参加线性代数重修的同学请在今天下午来我办公室。</a></p>
+     </span>
+
+     <span class="list">
+     <h6 class="tit">谢谨峰导员：</h6>
+     <a href="#">参加线性代数重修的同学请在今天下午来我办公室。</a>
+     </span>
+
+     <span class="next_page">
+     <a class="page" href="#"><b>1</b></a>
+     <a class="page" href="#"><b>2</b></a>
+     <a class="page" href="#"><b>3</b></a>
+     <a class="page" href="#"><b>4</b></a>
+     <a class="page" href="#"><b>5</b></a>
+     <a class="page" href="#"><b>...</b></a>
+     <a class="page" href="#"><b>9</b></a>
+     <a class="downpage" href="#">下一页</a>&nbsp;&nbsp;
+     跳转到第
+     <input type="text" class="tbpage"  size="2">页
+     <input type="submit" id="button" value="跳转">
+     </span>
+     
+
+    </span>
+	<span class="footer" style="line-height:30px;">Copyright@2014 T&S assistance</br>Dalian Nationalities University </span>
+	</div>
+
+
+     <!--课表查询-->
+     
+     <div class="content_m" style="display:none;">
+     <span class="content_zl">
+        <iframe id='ifm2' width='700' height='500' align='center' marginwidth='0' marginheight='0' hspace='0' vspace='0' frameborder='0' scrolling='no' src="http://210.30.1.60/"><!-- 引入bb平台 -->
+        </iframe ></span>
+     <span class="footer" style="margin-top:-30px;line-height:30px;">Copyright@2014 T&S assistance</br>Dalian Nationalities University </span>
+     </div>
+
+     <!--教师信息-->
+     
+     <div class="content_m" style="display:none;">
+     <span class="content_zl">
+     <span id="search_teacher">  
+     <form method="post" action="teacher_content.html">
+            <input id="s" type="text" name="s" placeholder="请输入教师姓名" />
+            <input id="x" type="submit" value="查询" action="" />
+     </form>
+     </span>
+     </span>
+     <span class="footer" style="margin-top:-30px;line-height:30px;">Copyright@2014 T&S assistance</br>Dalian Nationalities University </span>
+     </div>
+
+
+     <!--教师留言-->
+     
+     <div class="content_m" style="display:none;">
+     <span class="content_zl">
+     <form method="post" action="xxx" runat="server">
+     <table border="0" width="100%" height="100%" style="margin:auto;margin-top:20px;" >
+     <tr valign="bottom" >
+     <td width="40%" align="right" style="padding-top:30px;"><strong>选择留言教师：</strong>
+     </td>
+           <td align="left"> <select name="select_teacher" align="left" style="width:100px;">
+            <option value="谢谨峰">谢谨峰</option>
+            <option value="郭海">郭海</option>
+            <option value="王波">王波</option>
+            <option value="于艳丽">于艳丽</option>
+            <option value="魏晓丹">魏晓丹</option>
+            </select>老师</td>
+     </tr>
+     <tr valign="top" >
+     <td align="right" style="padding-top:20px"><strong>主题：</strong></td>
+     <td align="left" style="padding-top:20px"><input type="text" name="bw" value=""  style="width: 250px;height:20px" /></td>
+     </tr>
+     <tr valign="top">
+     <td align="right" style="padding-top:20px"><strong>内容：</strong></td>
+     <td align="left" style="padding-top:20px"><textarea cols=40 rows=10 placeholder ="请在这里输入"></textarea></td>
+     </tr>
+     <tr valign="top" align="right">
+     <td style="padding-top:20px"><strong>附加本地文件：</strong></td>
+     <td align="left" style="padding-top:20px"><input runat="server"  type="file" multiple/></td></tr>
+     <tr valign="bottom">
+     <td></td>
+     <td align="left" style="padding-top:20px">
+     <input type="submit" value="  取消 " action=" " style="margin-left:40px" id="button"/>
+     <input type="submit" value="  保存 " action=" " style="margin-left:20px" id="button"/>
+     <input type="submit" value="  发布 " action=" " style="margin-left:20px" id="button"/></td>
+     </tr>
+     </table>
+     </form>
+     </span>
+     <span class="footer" style="margin-top:-30px;line-height:30px;">Copyright@2014 T&S assistance</br>Dalian Nationalities University </span>
+	 </div>
+
+
+	<!--备忘录-->
+    
+     <div class="content_m" style="display:none;">
+	<span class="content_zl">
+		<h2>Note</h2>
+		<form method="get" action="xxxx">
+        <table border="0" width="100%" height="98%" style="margin:auto">
+        <tr valign="top">
+        <td width="40%" align="right" style="padding-bottom:10px"><strong>备忘类型：</strong></td>
+        <td align="left"><input type="text" name="bw" value=""  style="width: 182px" /></td>
+        </tr>	
+        <tr valign="top">
+        <td align="right" style="padding-bottom:10px"><strong>提醒频率：</strong></td>
+        <td align="left">
+                         <input type="radio" name="tx">仅一次&nbsp;
+                         <input type="radio" name="tx">每天&nbsp;
+                         <input type="radio" name="tx">不提醒&nbsp;
+        </td>
+        </tr>
+        <tr valign="top"><td align="right" ><strong>提醒时间：</strong></td>
+        <td align="left" style="padding-bottom:10px">
+        	<select name="data">
+            <option value="2014">2014年</option>
+            <option value="2015">2015年</option>
+            <option value="2016">2016年</option>
+            <option value="2017">2017年</option>
+            <option value="2018">2018年</option>
+        	</select>
+        	<select name="data_m">
+            <option value="01">01月</option>
+            <option value="02">02月</option>
+            <option value="03">03月</option>
+            <option value="04">04月</option>
+            <option value="05">05月</option>
+            <option value="08">08月</option>
+            <option value="09">09月</option>
+            <option value="10">10月</option>
+            <option value="11">11月</option>
+            <option value="12">12月</option>
+        	</select>
+        	<select name="data_d">
+            <option value="01">01日</option>
+            <option value="02">02日</option>
+            <option value="03">03日</option>
+            <option value="04">04日</option>
+            <option value="05">05日</option>
+            <option value="08">08日</option>
+            <option value="09">09日</option>
+            <option value="10">10日</option>
+            <option value="11">11日</option>
+            <option value="12">12日</option>
+            <option value="13">13日</option>
+            <option value="14">14日</option>
+            <option value="15">15日</option>
+            <option value="16">17日</option>
+            <option value="18">18日</option>
+            <option value="19">19日</option>
+            <option value="20">20日</option>
+            <option value="21">21日</option>
+            <option value="22">22日</option>
+            <option value="23">23日</option>
+            <option value="24">24日</option>
+            <option value="25">25日</option>
+            <option value="26">26日</option>
+            <option value="27">27日</option>
+            <option value="28">28日</option>
+            <option value="29">29日</option>
+            <option value="30">30日</option>
+            <option value="31">31日</option>
+        	</select><br/>
+        	<select name="data_am"  style="width: 70px">
+            <option value="0">上午</option>
+            <option value="1">下午</option>
+            </select>
+            <select name="data_t">
+            <option value="01"> 01点</option>
+            <option value="02"> 02点</option>
+            <option value="03"> 03点</option>
+            <option value="04"> 04点</option>
+            <option value="05"> 05点</option>
+            <option value="08"> 08点</option>
+            <option value="09"> 09点</option>
+            <option value="10"> 10点</option>
+            <option value="11"> 11点</option>
+            <option value="00"> 12点</option>
+        	</select>
+        	<select name="data_mm">
+            <option value="00"> 00分</option>
+            <option value="05"> 05分</option>
+            <option value="10"> 10分</option>
+            <option value="15"> 15分</option>
+            <option value="20"> 20分</option>
+            <option value="25"> 25分</option>
+            <option value="30"> 30分</option>
+            <option value="35"> 35分</option>
+            <option value="40"> 40分</option>
+            <option value="45"> 45分</option>
+            <option value="40"> 50分</option>
+            <option value="45"> 55分</option>
+        	</select>
+        </td>
+        </tr>
+        <tr valign="top" >
+        <td align="right" style="padding-bottom:10px"><strong>备忘内容：</strong></td>
+        <td align="left" style="padding-bottom:10px"><textarea cols=40 rows=10 placeholder ="请在这里输入"></textarea>
+        </td>
+        </tr>
+        <tr><td></td>
+        <td align="left" >
+        <input type="submit" value="  保存 " action=" " id="button"/>
+        <input type="submit" value=" 退出编辑 " action=" " style="margin-left:20px" id="button"/>
+        </td></tr>
+        </table>
+        </form>
+	</span>
+	<span class="footer" style="margin-top:-30px;line-height:30px;">Copyright@2014 T&S assistance</br>Dalian Nationalities University</span>
+	</div>
+	
+
+	<!--资料下载-->
+
+    
+     <div class="content_m" style="display:none;">
+	 <span class="content_zl">
+	     <h3>资料下载</h3>
+		<form  runat="server" action="(路径)../xxx/ooxx.xxoo" method="post">
+        
+         <input runat="server"  type="file"/>
+         <input type="submit" title="下载" value="下载" id="button"/>
+         
+       </form>
+	</span>
+     <span class="footer" style="margin-top:-30px;line-height:30px;">Copyright@2014 T&S assistance</br>Dalian Nationalities University </span>
+
+	</div>
+    </div>
+	</div>
+</body>
+
+
+</html>

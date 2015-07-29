@@ -1,0 +1,509 @@
+body{
+	width:1200px;
+	height:100%;
+	margin:0 auto;
+	color: #272822;
+	background-color: #FFFFCB;
+	font-family: 微软雅黑;
+	/*border:1px solid #DC199C;*/
+}
+*{
+	margin:0px;
+	padding:0px;
+}
+input, textarea {
+	font-family: Microsoft YaHei, SimSun, Arial;
+	font-size: 13px;
+}
+.body{
+	width:1000px;
+	height:900px;
+	margin:0 auto;
+	/*outline:1px solid red;*/
+	background-color: #fff;
+}
+/*写标题的部分*/
+.title{
+	float: left;
+    /*margin-right:630px;*/
+	width:300px;
+	height: 120px;
+	display: inline-block;
+	/*outline:1px solid red;*/
+}
+.title h1{
+	line-height: 250%;
+	font-size:35px;
+	color:#890074;
+	margin-top:30px;
+	position:relative;
+	text-shadow:2px 2px 0 #7C6A9D;
+}
+.title p{
+	line-height: 150%;
+	float:left;
+	margin-top:-10px;
+	color:#7C6A9D;
+	position:absolute;
+}
+.menu{
+     width:150px;
+	 height: 20px;
+     padding-top: 20px;
+    float: right;
+	display: inline-block;
+	/*outline:1px solid red;*/
+}
+.return{
+	color: #FFFFCB;
+	text-shadow:1px 2px 0 #600070;
+	font-size: 15px;
+	padding: 3px;
+
+	margin-bottom: 3px;
+	text-decoration: none;
+	
+}
+/*整个头部*/
+.header{
+	width: 1000px;
+	height: 210px;
+	margin: 0 auto;
+	background: url(images/img.png);
+	/*background-color: #FFFFC9;
+	background: url(images/img1.png);
+	box-shadow: 2px 2px 0 #FF429E;*/
+	position:absolute;
+}
+/*logo部分*/	
+#logo {
+	float: left;
+	width:120px;
+	height: 120px;
+}
+#logo img{
+	float:right;
+	width:60px;
+	height:60px;
+	margin:50px 0px 20px 40px;
+}
+/*导航条部分*/
+.nav{
+	width:800px;
+	height:50px;
+	margin-top:150px;
+	padding-left: 30px;
+	position:absolute;
+}
+.nav ul{
+	list-style:none;
+	font-weight:bold;
+	font-family:微软雅黑;
+	text-align:center;
+}
+.nav ul li{
+	float:left;
+	width:100px;
+	margin-left:2px;
+}
+.nav ul li a{
+	color:#890074;
+	padding-top:20px;
+	text-align:center;
+	 text-decoration: none;
+	display: inline-block;
+		  
+}
+ .nav ul li a:hover{
+ 	      width:65px;
+		  color:#AF8686; 
+		  text-decoration: none;
+		}
+.nav ul li a:active{
+	text-decoration:none;
+    color:#890074;
+}
+/*导航条下消息查询的总框的设置*/
+#content{
+	width: 1000px;
+	height: 700px;
+	margin-top: 200px;
+	position:absolute;
+	/*background-color: #FCF2F8;*/
+	
+	/*outline: 1px solid #FF429E;*/
+}
+/*首页*/
+.content_sy_left_u{
+	width: 250px;
+	height: 250px;
+	float: right;
+	display: inline-block;
+	text-align: center;	
+	margin:30px 10px 30px 30px;
+	color:#FEF2DA;
+    background-color:rgba(100,100,60,0.1);
+	border-radius:250px 250px 250px 250px;
+} 
+.content_sy_left_m{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	margin:20px 10px 30px -230px;
+	color:#fff;
+    background-color:rgba(96,0,112,0.1);
+	border-radius:200px 200px;
+} 
+.content_sy_left_d{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	display: inline-block;
+	margin:0px 10px 30px 40px;
+	color:#FEF2DA;
+    background-color:rgba(100,100,60,0.1);
+	border-radius:100px 100px;
+} 
+.content_sy_right{
+	width: 950px;
+	height: 500px;
+	float: right;
+	text-align: center;
+	color:#600070;
+	margin:30px 25px 30px 0px;
+	background-color:#fff;
+	outline: 1px solid #890074;
+	box-shadow: 2px 2px 0 #890074;
+} 
+/*学校通知总框的内容*/
+.content_left{
+	width: 550px;
+	height: 300px;
+	float:left;
+	background-color: #fff;
+	margin:25px 0px 10px 50px;
+	position:absolute;
+	outline: 1px solid #890074;
+	box-shadow: 2px 2px 0 #890074;
+
+}
+/*学校通知头部的设置*/
+.content_left_top{
+	width: 549px;
+	height: 50px;
+    background-color: #FEF2DA;
+	float:left;
+	display: block;
+	position: absolute;
+	box-shadow: 2px 2px 0 #FFE5E4;
+	/*outline:1px solid red;*/
+}
+/*学校通知超链接的设置*/
+.content_left_con {
+	/*list-style:none;*/
+	color:#505269;
+	list-style: square;
+	line-height: 150%;
+	font-family:宋体;
+	font-size:15px;
+	color:#505269;
+	margin-top:80px;	
+}
+.content_left_con li{
+    margin-left: 40px;
+    
+}
+.content_left_con li a{
+    text-decoration:none;
+    color: #B2009E;
+    height: 25px;
+    position:absolute;
+    overflow: hidden;
+}
+.content_left_con li a:hover{
+    color:#505269;
+    text-decoration:underline;
+   }
+/*管理员通知总框的设置*/
+.content_right_up{
+	width: 300px;
+	height: 260px;
+	float:right;
+	clear:both;
+	background-color: #fff;	
+	text-align: center;
+	margin:10px 50px 10px 10px;
+	position:relative;
+	outline: 1px solid #890074;
+	box-shadow: 2px 2px 0 #FF429E;
+}
+/*管理员通知头部的设置*/
+.content_right_up_h{
+    width: 298px;
+	height: 40px;
+    background-color: #FEF2DA;
+	display: block;
+	box-shadow: 2px 2px 0 #FFE5E4;
+}
+/*管理员通知超链接的设置*/
+.content_right_up_con{
+    line-height: 25px;
+	font-family:宋体;
+	font-size:13px;
+	color:#505269;
+	list-style: square;
+	margin-top:15px;
+	overflow: hidden;
+}
+.content_right_up_con li{
+	clear: both;
+	float: left;
+    margin-left: 30px;
+
+}
+.content_right_up_con li a{
+    text-decoration:none;
+    height: 30px;
+    color: #B2009E;
+    position:absolute;
+    overflow: hidden;
+    line-height: 30px;
+
+}
+.content_right_up_con li a:hover{
+    color:#505269;
+    text-decoration: underline;    line-height: 30px;
+}
+/*教师通知总框的设置*/
+.content_right_down{
+	width: 900px;
+	height: 268px;
+    clear:both;
+	float:right;
+	background-color: #fff;
+	text-align: center;
+	margin:20px 50px 10px 10px;
+	outline: 1px solid #890074;
+	box-shadow: 2px 2px 0 #FF429E;
+}
+/*教师通知头部的设置*/
+.content_right_up_t{
+    width: 899px;
+	height: 50px;
+    background-color: #FEF2DA;
+	float:left;
+	font-size: 22px;
+	display: block;
+	position: absolute;
+	box-shadow: 2px 2px 0 #FFE5E4;
+}
+.list{
+	width:900px;
+	height: 34px;
+	padding-top: 10px;
+	margin-left: 3px;
+	clear:both;
+	float:left;
+	display: block;
+/*	border-bottom:1px solid  #890074;*/
+
+}
+.user{
+	width:298px;
+	font-family:宋体;
+	font-size:10px;
+	color: #737373;
+	text-align: left;
+	padding-left:5px;
+	/*border: 1px solid red;*/
+
+}
+.tit{
+	font-family:宋体;
+	font-size:10px;
+	color: #272822;
+	float: left;
+	padding-left:5px;
+	line-height: 35px;
+}
+a{
+	font-family:宋体;
+	font-size:10px;
+	color: #272822;
+	line-height: 35px;
+	text-decoration:none;
+}
+a:hover{
+	color:#B30075;
+}
+.next_page{
+	width:900px;
+	font-family:宋体;
+	font-size:10px;
+	color: #737373;
+	float: left;
+	display: block;
+	text-align:left;
+	padding-left:5px;
+	height: 30px;
+	margin-top: 5px;
+	
+	/*border: 1px solid red;*/
+}
+.page{
+	color: black;
+	text-decoration:none;
+}
+.downpage{
+	color: black;
+	text-decoration:none;
+}
+/*查询功能的设置*/
+#search{
+	width: 300px;
+	height: 30px;
+	float:right;
+	margin:20px 50px 8px 10px;
+	position:relative;
+}
+#search form {
+	margin: 0;
+	padding: 0px;
+}
+#search fieldset {
+	margin: 0;
+	padding: 0;
+	border:none;
+}
+#search #s, #search #x {
+	float: left;
+}
+
+#s{
+	width: 188px;
+	margin: 2px 6px 0 0;
+	padding: 4px 5px;	
+	border: 1px solid #890074;
+}
+
+#search #x {
+	width: 67px;
+	height: 28px;
+	padding: 0;
+	margin-top:2px;
+	background: #890074;
+	border: none;
+	text-transform: lowercase;
+	color: #fff;
+	cursor:pointer;
+}
+/*教师查询*/
+.content_zl #search_teacher{
+	width: 300px;
+	height: 30px;
+	float: center;
+	border:none;
+}
+#search_teacher fieldset {
+	margin: 0;
+	padding: 0;
+	border:none;
+}
+#search_teacher #x {
+	width: 67px;
+	height: 35px;
+	padding: 0;
+	margin-top:200px;
+	background: #890074;
+	border: none;
+	text-transform: lowercase;
+	color: #fff;
+	cursor:pointer;
+}
+#search_teacher #s{
+	width: 188px;
+	height: 28px;
+	margin: 2px 6px 0 0;
+	padding: 4px 5px;	
+	border: 2px solid #890074;
+}
+/*教师显示*/
+#teacher_content{
+	width: 500px;
+	height: 500px;
+	float: right;
+	display: inline-block;
+	text-align: center;	
+	margin:30px 10px 30px 30px;
+	color:#FEF2DA;
+/*    background-color:rgba(100,100,60,0.1);
+	border-radius:250px 250px 250px 250px;*/
+} 
+#teacher_content h4{
+	float: left;
+	padding-left:50px;
+}
+/*当鼠标点击时颜色的变化*/
+.active{
+	color:#FF429E;
+}
+/*资料框，首页，备忘录，发布消息里的部分*/
+.content_zl{
+	width: 900px;
+	height: 500px;
+	display:block;
+	text-align: center;
+    /*background-color:rgba(100,100,60,0.1);*/
+	margin: 50px 90px 90px 50px;
+	outline: 1px solid #890074;
+
+	/*box-shadow: 2px 2px 0 #FF429E;*/
+} 
+h2{
+	color:#890074;
+	padding:30px;
+	
+}
+h3{
+	color:#890074;
+	line-height:350%;
+	text-align:center;
+}
+h4{
+	color:#890074;
+	line-height:250%;
+	text-align:center;
+}
+/*底部文字部分*/
+.footer{
+	width: 800px;
+    clear:both;
+	float:left;
+	margin:20px 20px 10px 80px;
+	position:relative;
+	text-align: center;
+	color: #890074;
+	/*outline: 1px solid #FF429E;*/
+	
+}
+table{
+    margin-top: 15px;
+    color: #890074;
+    border-bottom:2px solid #fff;
+}
+tr td{
+	padding:5px;
+	
+}
+#button{
+	color:#fff;
+	background-color: #890074;
+	font-size: 16px;
+	padding:0px 5px 0px 5px;
+	border: 2px #890074 solid;
+	border-radius: 2px;
+	text-align:center;
+	cursor: pointer;
+}
