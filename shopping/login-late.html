@@ -1,0 +1,691 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="js/jquery-1.11.2.js" type="text/javascript"></script>
+<script src="js/home.js" type="text/javascript"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>购物网站</title>
+</head>
+
+<body>
+  <div id="zhezhao"></div><!-- 点击登录后遮罩整个页面 -->
+  <div id="sucessed">
+      <p>已加入购物车</p>
+    </div>
+  <!-- 顶部带背景图的大部分 -->
+  <div class="top" id="top-change">
+    <div class="title">发现、采购你喜欢的一切</div>
+    <div class="search-box">
+      <form method="get" action="/search/" class="new-searching-unit" data-regestered="regestered">
+        <input id="query" type="text" size="27" name="q" autocomplete="off" placeholder="搜索你喜欢的" value="">
+        <a href="#" onclick="return false;" class="go"></a>
+      </form>
+      <div class="search-hint"></div>
+      <div class="hot-words">
+        <span>热门搜索：</span><a href="">箱包</a><span>，</span><a href="">前沿数码</a><span>，</span><a href="">美妆</a><span>，</span><a href="">美食</a><span>，</span><a href="">日常用品</a>
+      </div>
+    </div>
+
+
+      <!-- 顶部logo及登陆、注册条 -->
+      <div class="header" id="header">
+      	<div class="wrap">
+      		<div class="meun-bar">
+      			<div class="left-part">
+      				<a href="home.html" id="caigou"></a>
+      				<a href="car.html" class="header-item"><img src="images/car.png" class="homeIcon"/>我的彩购车</a>
+      				<a href="" class="header-item"><img src="images/heart.png" class="homeIcon"/>收藏夹</a>
+      				<div id="meun-nav">
+                <a href="" class="header-item">商品分类</a>
+                <!-- <img src="images/nav.png" class="navIcon"/> -->
+                <span class="arrow"></span>
+                  <div class="header-main-menu">
+                     <table style="overflow:hidden;">
+            <tr>
+              <td><a href="#" class="big">女装</a></td>
+              <td><a href="#" id="size">上衣</a></td>
+              <td><a href="#" id="size">裤子</a></td>
+              <!-- <td><a href="#" id="size">裙子</a></td> -->
+            </tr>
+
+            <tr>
+              <td><a href="#" class="big">男装</a></td>
+              <td><a href="#" id="size">上衣</a></td>
+              <td><a href="#" id="size">裤子</a></td>
+              <td><a href="#" id="size">裙子</a></td>
+              <td><a href="#" id="size">裙子</a></td>
+              <td><a href="#" id="size">裙子</a></td>
+              <td><a href="#" id="size">裙子</a></td>
+            </tr>
+
+            <tr>
+              <td><a href="#" class="big">箱包</a></td>
+              <td><a href="#" id="size">上衣</a></td>
+              <td><a href="#" id="size">裤子</a></td>
+              <td><a href="#" id="size">裙子</a></td>
+            </tr>
+
+            <tr>
+              <td><a href="#" class="big">美妆</a></td>
+              <td><a href="#" id="size">上衣</a></td>
+              <td><a href="#" id="size">裤子</a></td>
+              <td><a href="#" id="size">裙子</a></td>
+            </tr>
+
+            <tr>
+              <td><a href="#" class="big">美食</a></td>
+              <td><a href="#" id="size">上衣</a></td>
+              <td><a href="#" id="size">裤子</a></td>
+              <td><a href="#" id="size">裙子</a></td>
+            </tr>
+
+            <tr>
+              <td><a href="#" class="big">家居</a></td>
+              <td><a href="#" id="size">上衣</a></td>
+              <td><a href="#" id="size">裤子</a></td>
+              <td><a href="#" id="size">裙子</a></td>
+            </tr>
+            <tr>
+              <td><a href="#" class="big">数码</a></td>
+              <td><a href="#" id="size">上衣</a></td>
+              <td><a href="#" id="size">裤子</a></td>
+            </tr>
+          
+          </table>
+
+                  </div>
+      				</div>
+      			</div>
+            <div class="mid-search">
+              <form method="get" action="/search/" class="mid-searching-unit" data-regestered="regestered">
+                <input id="query" type="text" size="27" name="q" autocomplete="off" placeholder="搜索你喜欢的" value="">
+                <a href="#" onclick="return false;" class="go"></a>
+              </form>
+            </div>
+      			<div class="right-part">
+              <div class="login-nav" style="width=200px;">
+                <div id="user-show">
+                  <div ><a href="manage.html"><span class="text" > renjing</span></a></div>
+                  <span class="arrow1"></span>
+                  <div class="user-show-detail">
+                      <img src="images/user-head.png" class="user-show-head">
+                      <div class="user-name-box">
+                          <a href="manage.html" class="user-text user-name">renjing</a>
+                          <a href="manage.html" class="user-text user-name">订单管理</a>
+                      </div>
+                      <a href="manage.html" class="user-text">修改个人信息</a>
+                      <a href="index.html" class="user-text user-out">退出</a>
+                  </div>
+                </div>
+              </div>
+                <!-- <a href="index.html"><span class="text"> 退出</span></a> -->
+              </div>   
+            </div>
+      		</div>
+      	</div>
+      </div>
+    <!-- 弹出的登陆、注册框 -->
+    <div id="login"> 
+      <div class="login-close">
+        <a href="javascript:hidLogin()" class="close-icon"><img src="images/close1.png"></a>
+      </div>
+      <iframe id="login-iframe" name="login" scrolling="no" src="login.html"></iframe>
+    </div>
+  </div>
+  <!-- 中部推荐分类部分，点击可切换相应类别背景 -->
+  <div class="bottom wrapper">
+    <div class="recommend-line"><a>大家正在搜索</a></div>
+    <div class="category-image-box">
+      <a href="javascript:bgChange_women()" target="_self" class="category-image">
+        <div class="blur"><img src="images/women-clothing.png"></div>
+        <div class="image-title">女装</div>
+      </a>
+      <a href="javascript:bgChange_man()" target="_self" class="category-image">
+        <div class="blur"><img src="images/man-clothing.png"></div>
+        <div class="image-title" id="man">男装</div>
+      </a>
+      <a href="javascript:bgChange_bag()" target="_self" class="category-image">
+        <div class="blur"><img src="images/bag.png"></div>
+        <div class="image-title" id="bag">箱包</div>
+      </a>
+      <a href="javascript:bgChange_makeup()" target="_self" class="category-image">
+        <div class="blur"><img src="images/makeup.png"></div>
+        <div class="image-title" id="makeup">美妆</div>
+      </a>
+      <a href="javascript:bgChange_food()" target="_self" class="category-image">
+        <div class="blur"><img src="images/food.png"></div>
+        <div class="image-title" id="food">美食</div>
+      </a>
+      <a href="javascript:bgChange_house()" target="_self" class="category-image">
+        <div class="blur"><img src="images/house.png"></div>
+        <div class="image-title" id="house">家居</div>
+      </a>
+      <a href="javascript:bgChange_shuma()" target="_self" class="category-image last">
+        <div class="blur"><img src="images/product.png"></div>
+        <div class="image-title" id="shuma">数码</div>
+      </a>
+      
+    </div>
+    <!-- 中部展示区域 -->
+    <div class="recommend-line"><a>热销商品</a></div>
+    <div class="top-good-box">
+      <a href="show.html"  class="top-good">
+        <div class="blur"><img src="images/women_show1.jpg" style="max-width:220px;"></div>
+        <div class="good-title">女装</div>
+      </a><a href="show.html"  class="top-good">
+        <div class="blur"><img src="images/women_show2.jpg" style="max-width:220px;"></div>
+        <div class="good-title">女装</div>
+      </a><a href="show.html"  class="top-good">
+        <div class="blur"><img src="images/makeup_show1.jpg" style="max-width:220px;"></div>
+        <div class="good-title">女装</div>
+      </a>
+      </a><a href="show.html"  class="top-good">
+        <div class="blur"><img src="images/house_show2.jpg" style="max-width:220px;"></div>
+        <div class="good-title">女装</div>
+      </a>
+      <a href="show.html"  class="top-good last">
+        <div class="blur"><img src="images/shuma_show2.jpg" style="max-width:220px;"></div>
+        <div class="good-title">数码</div>
+      </a> 
+    </div>
+    <div class="recommend-line"><a>商品分类</a></div>
+    <!-- 女装1F -->
+  <div class="women-clothing">
+    <!-- 女装左侧显示 -->
+    <div class="show-right-part">
+    <div class="show-right">
+      <a href="all-goods.html" class="show-lever one"></a>
+      <div id="pics0"><!-- 左侧图片切换 -->
+      <img src="images/women_change1.png" />
+      <img src="images/women_change2.png" />
+      <img src="images/women_change3.png" />
+      </div>
+      <a href="show.html" class="text">潮流女装</a>
+      <a href="show.html" class="text">品牌特卖</a>
+      <a href="show.html" class="text">时尚新品</a>
+      <a href="show.html" class="text">商城同款</a>
+      <a href="show.html" class="text">白搭衬衫</a>
+      <a href="show.html" class="text">独家首发</a>
+    </div>
+    <a href="all-goods.html" class="show-big big-one"></a>
+    </div>
+    <!-- 女装右侧显示 -->
+    <div class="show-left-part">
+    <div id="show_left">
+      <a href="show.html" class="women show1"><div class="select" title="收藏"></div></a>
+      <div class="name">
+      <a href="show.html" class="text">田园小碎花复古连衣裙</a>
+      <h5>￥<span>198.00</span></h5>
+      <a href="javascript:successed()" class="header-item" id="demoBtn2"><img src="images/car_after.png" class="homeIcon"/>加入彩购车</a>
+      <a href="" class="header-item space-left"><img src="images/heart_after.png" class="homeIcon"/>收藏</a>
+      </div>
+    </div>
+    <div id="show_left">
+      <a href="show.html" class="women show2"><div class="select" title="收藏"></div></a>
+      <div class="clear name">
+      <a href="show.html" class="text">雪纺纱织淑女公主裙</a>
+      <h5>￥<span>298.00</span></h5>
+      <a href="javascript:successed()" class="header-item"><img src="images/car_after.png" class="homeIcon"/>加入彩购车</a>
+      <a href="" class="header-item space-left"><img src="images/heart_after.png" class="homeIcon"/>收藏</a>
+      </div>
+    </div>
+    <div id="show_left">
+      <a href="show.html" class="women show3"><div class="select" title="收藏"></div></a>
+      <div class="name">
+      <a href="show.html" class="text">韩国百搭条纹长款t恤</a>
+      <h5>￥<span>98.00</span></h5>
+      <a href="javascript:successed()" class="header-item"><img src="images/car_after.png" class="homeIcon"/>加入彩购车</a>
+      <a href="" class="header-item space-left"><img src="images/heart_after.png" class="homeIcon"/>收藏</a>
+      </div>
+    </div> 
+    </div>
+  </div>
+  <!-- 用于间隔及清除浮动 -->
+  <div class="space clear"></div>
+    <!-- 男装2F -->
+  <div class="clear man-clothing">
+    <div class="show-right-part" id="man"><!-- 男装左侧显示 -->
+    <div class="show-right">
+      <a href="all-goods.html" class="show-lever two"></a>
+      <div id="pics1">
+      <img src="images/man_change1.png" />
+      <img src="images/man_change2.png" />
+      <img src="images/man_change3.png" />
+      </div>
+      <a href="" class="text">精品男装</a>
+      <a href="" class="text">大牌新品</a>
+      <a href="" class="text">时尚指南</a>
+      <a href="" class="text">轻商务</a>
+      <a href="" class="text">夏季短袖</a>
+      <a href="" class="text">薄夹克</a>
+    </div>
+    <a href="all-goods.html" class="show-big big-two"></a>
+    </div>
+    <!-- 男装右侧显示 -->
+    <div class="show-left-part">
+    <div id="show_left">
+      <a class="women show4"><div class="select" title="收藏"></div></a>
+      <div class="name">
+      <a href="" class="text">夏季潮流立体印花T恤</a>
+      <h5>￥<span>98.00</span></h5>
+      <a href="javascript:successed()" class="header-item"><img src="images/car_after.png" class="homeIcon"/>加入彩购车</a>
+      <a href="" class="header-item space-left"><img src="images/heart_after.png" class="homeIcon"/>收藏</a>
+      </div>
+    </div>
+    <div id="show_left">
+      <a class="women show5"><div class="select" title="收藏"></div></a>
+      <div class="clear name">
+      <a href="" class="text">字母印花太空棉短裤</a>
+      <h5>￥<span>199.00</span></h5>
+      <a href="javascript:successed()" class="header-item"><img src="images/car_after.png" class="homeIcon"/>加入彩购车</a>
+      <a href="" class="header-item space-left"><img src="images/heart_after.png" class="homeIcon"/>收藏</a>
+      </div>
+    </div>
+    <div id="show_left">
+      <a class="women show6"><div class="select" title="收藏"></div></a>
+      <div class="name">
+      <a href="" class="text">时尚大牌男士衬衫</a>
+      <h5>￥<span>198.00</span></h5>
+      <a href="javascript:successed()" class="header-item"><img src="images/car_after.png" class="homeIcon"/>加入彩购车</a>
+      <a href="" class="header-item space-left"><img src="images/heart_after.png" class="homeIcon"/>收藏</a>
+      </div>
+    </div> 
+    </div>
+  </div>
+  <!-- 用于间隔及清除浮动 -->
+  <div class="space clear"></div>
+  <div class="women_line clear"></div>
+  <div class="space clear"></div>
+  <!-- 箱包3F -->
+  <div class="clear man-clothing">
+    <div class="show-right-part"><!-- 箱包左侧显示 -->
+    <div class="show-right">
+      <a href="all-goods.html" class="show-lever three"></a>
+      <div id="pics2">
+      <img src="images/bag_change1.png" />
+      <img src="images/bag_change2.png" />
+      <img src="images/bag_change3.png" />
+      </div>
+      <a href="" class="text">箱包馆</a>
+      <a href="" class="text">女包</a>
+      <a href="" class="text">拉杆箱</a>
+      <a href="" class="text">商城同款</a>
+      <a href="" class="text">运动休闲</a>
+      <a href="" class="text">独家首发</a>
+    </div>
+    <a href="all-goods.html" class="show-big big-three"></a>
+    </div>
+    <!-- 箱包右侧显示 -->
+    <div class="show-left-part">
+    <div id="show_left">
+      <a class="women show7"><div class="select" title="收藏"></div></a>
+      <div class="name">
+      <a href="" class="text">韩版编织多卡位女士钱包</a>
+      <h5>￥<span>148.00</span></h5>
+      <a href="javascript:successed()" class="header-item"><img src="images/car_after.png" class="homeIcon"/>加入彩购车</a>
+      <a href="" class="header-item space-left"><img src="images/heart_after.png" class="homeIcon"/>收藏</a>
+      </div>
+    </div>
+    <div id="show_left">
+      <a class="women show8"><div class="select" title="收藏"></div></a>
+      <div class="clear name">
+      <a href="" class="text">学院风铆钉双肩包</a>
+      <h5>￥<span>158.00</span></h5>
+      <a href="javascript:successed()" class="header-item"><img src="images/car_after.png" class="homeIcon"/>加入彩购车</a>
+      <a href="" class="header-item space-left"><img src="images/heart_after.png" class="homeIcon"/>收藏</a>
+      </div>
+    </div>
+    <div id="show_left">
+      <a class="women show9"><div class="select" title="收藏"></div></a>
+      <div class="name">
+      <a href="" class="text">小清新直条万向轮拉杆箱</a>
+      <h5>￥<span>399.00</span></h5>
+      <a href="javascript:successed()" class="header-item"><img src="images/car_after.png" class="homeIcon"/>加入彩购车</a>
+      <a href="" class="header-item space-left"><img src="images/heart_after.png" class="homeIcon"/>收藏</a>
+      </div>
+    </div> 
+    </div>
+  </div>
+  <!-- 用于间隔及清除浮动 -->
+  <div class="space clear"></div>
+    <!-- 美妆4F -->
+  <div class="clear man-clothing">
+    <div class="show-right-part"><!-- 美妆左侧显示 -->
+    <div class="show-right">
+    <a href="all-goods.html" class="show-lever four"></a>
+    <div id="pics3">
+      <img src="images/makeup_change1.png" />
+      <img src="images/makeup_change2.png" />
+      <img src="images/makeup_change3.png" />
+    </div>
+    <a href="all-goods.html" class="makeup_down"></a>
+    </div>
+    <a href="all-goods.html" class="show-big big-four"></a>
+    </div>
+    <!-- 女装右侧显示 -->
+    <div class="show-left-part">
+    <div id="show_left">
+      <a class="women show10"><div class="select" title="收藏"></div></a>
+      <div class="name">
+      <a href="" class="text">美丽法则&nbsp恒彩水润口红</a>
+      <h5>￥<span>98.00</span></h5>
+      <a href="javascript:successed()" class="header-item"><img src="images/car_after.png" class="homeIcon"/>加入彩购车</a>
+      <a href="" class="header-item space-left"><img src="images/heart_after.png" class="homeIcon"/>收藏</a>
+      </div>
+    </div>
+    <div id="show_left">
+      <a class="women show11"><div class="select" title="收藏"></div></a>
+      <div class="clear name">
+      <a href="" class="text">水宝宝&nbsp水嫩防晒乳88ml </a>
+      <h5>￥<span>88.00</span></h5>
+      <a href="javascript:successed()" class="header-item"><img src="images/car_after.png" class="homeIcon"/>加入彩购车</a>
+      <a href="" class="header-item space-left"><img src="images/heart_after.png" class="homeIcon"/>收藏</a>
+      </div>
+    </div>
+    <div id="show_left">
+      <a class="women show12"><div class="select" title="收藏"></div></a>
+      <div class="name">
+      <a href="" class="text">泰国Beauty&nbspBuffet矿物喷雾</a>
+      <h5>￥<span>198.00</span></h5>
+      <a href="javascript:successed()" class="header-item"><img src="images/car_after.png" class="homeIcon"/>加入彩购车</a>
+      <a href="" class="header-item space-left"><img src="images/heart_after.png" class="homeIcon"/>收藏</a>
+      </div>
+    </div> 
+    </div>
+  </div>
+    <!-- 用于间隔及清除浮动 -->
+    <div class="space clear"></div>
+    <div class="bag_line clear"></div>
+    <div class="space clear"></div>
+    <!-- 美食5F -->
+    <div class="clear man-clothing">
+    <div class="show-right-part"><!-- 美食左侧显示 -->
+      <div class="show-right">
+      <a href="all-goods.html" class="show-lever five"></a>
+      <div id="list"><!-- 美食左侧显示列表 -->
+      <a href="" class="text smalle top-blank">年终促</a>
+      <a href="" class="text smalle top-blank">零食</a>
+      <a href="" class="text smalle">进口食品</a>
+      <a href="" class="text smalle">红酒</a>
+      <a href="" class="text smalle">白酒</a>
+      <a href="" class="text smalle">啤酒</a>
+      <a href="" class="text smalle">花茶</a>
+      <a href="" class="text smalle">饮料</a>
+      <a href="" class="text smalle">冲调</a>
+      <a href="" class="text smalle">牛奶</a>
+      <a href="" class="text smalle">粮油</a>
+      <a href="" class="text smalle">生鲜</a>
+      <a href="" class="text smalle">免费试吃</a>
+      <a href="" class="text smalle">巧克力</a>
+      <a href="" class="text smalle">冰淇淋</a>
+      <a href="" class="text smalle">碧根果</a>
+      <a href="" class="text smalle">龙虾</a>
+      <a href="" class="text smalle">自助餐</a>
+      <a href="" class="text smalle">蛋糕</a>
+      <a href="" class="text smalle">水果</a>
+      </div>  
+      </div>
+      <a href="all-goods.html" class="show-big big-five"></a>
+    </div>
+    <!-- 美食右侧显示 -->
+    <div class="show-left-part">
+      <div id="show_left">
+      <a class="women show13"><div class="select" title="收藏"></div></a>
+      <div class="name">
+      <a href="" class="text">巧罗巧克力16口味</a>
+      <h5>￥<span>78.00</span></h5>
+      <a href="javascript:successed()" class="header-item"><img src="images/car_after.png" class="homeIcon"/>加入彩购车</a>
+      <a href="" class="header-item space-left"><img src="images/heart_after.png" class="homeIcon"/>收藏</a>
+      </div>
+      </div>
+      <div id="show_left">
+      <a class="women show14"><div class="select" title="收藏"></div></a>
+      <div class="clear name">
+      <a href="" class="text">韩国进口海太饼干芝士奶</a>
+      <h5>￥<span>69.80</span></h5>
+      <a href="javascript:successed()" class="header-item"><img src="images/car_after.png" class="homeIcon"/>加入彩购车</a>
+      <a href="" class="header-item space-left"><img src="images/heart_after.png" class="homeIcon"/>收藏</a>
+      </div>
+      </div>
+      <div id="show_left">
+      <a class="women show15"><div class="select" title="收藏"></div></a>
+      <div class="name">
+      <a href="" class="text">忆罗法式马卡龙甜点12枚</a>
+      <h5>￥<span>58.00</span></h5>
+      <a href="javascript:successed()" class="header-item"><img src="images/car_after.png" class="homeIcon"/>加入彩购车</a>
+      <a href="" class="header-item space-left"><img src="images/heart_after.png" class="homeIcon"/>收藏</a>
+      </div>
+      </div> 
+    </div>
+    </div>
+
+    <!-- 用于间隔及清除浮动 -->
+    <div class="space clear"></div>
+    <!-- 家居6F -->
+    <div class="clear man-clothing">
+    <div class="show-right-part"><!-- 家居右侧显示 -->
+    <div class="show-right">
+      <a href="all-goods.html" class="show-lever six"></a>
+      <div id="list"><!-- 家居右侧列表显示 -->
+      <a href="" class="text smalle top-blank">热卖家居</a>
+      <a href="" class="text smalle top-blank">爆款建材</a>
+      <a href="" class="text smalle">家居名品</a>
+      <a href="" class="text smalle">0元首付</a>
+      <a href="" class="text smalle">金屋定制</a>
+      <a href="" class="text smalle">装修日记</a>
+      <a href="" class="text smalle">四件套</a>
+      <a href="" class="text smalle">蚕丝被</a>
+      <a href="" class="text smalle">保健枕</a>
+      <a href="" class="text smalle">装饰摆件</a>
+      <a href="" class="text smalle">珠宝配饰</a>
+      <a href="" class="text smalle">照片墙</a>
+      <a href="" class="house_down"></a>
+      </div>
+    </div>
+    <a href="all-goods.html" class="show-big big-six"></a>
+    </div>
+    <!-- 家居左侧显示 -->
+    <div class="show-left-part">
+    <div id="show_left">
+      <a class="women show16"><div class="select" title="收藏"></div></a>
+      <div class="name">
+      <a href="" class="text">公主模特首饰架</a>
+      <h5>￥<span>98.00</span></h5>
+      <a href="javascript:successed()" class="header-item"><img src="images/car_after.png" class="homeIcon"/>加入彩购车</a>
+      <a href="" class="header-item space-left"><img src="images/heart_after.png" class="homeIcon"/>收藏</a>
+      </div>
+    </div>
+    <div id="show_left">
+      <a class="women show17"><div class="select" title="收藏"></div></a>
+      <div class="clear name">
+      <a href="" class="text">实木多层折叠花架5款入</a>
+      <h5>￥<span>178.00</span></h5>
+      <a href="javascript:successed()" class="header-item"><img src="images/car_after.png" class="homeIcon"/>加入彩购车</a>
+      <a href="" class="header-item space-left"><img src="images/heart_after.png" class="homeIcon"/>收藏</a>
+      </div>
+    </div>
+    <div id="show_left">
+      <a class="women show18"><div class="select" title="收藏"></div></a>
+      <div class="name">
+      <a href="" class="text">【夜太美】时尚触控音乐</a>
+      <h5>￥<span>138.00</span></h5>
+      <a href="javascript:successed()" class="header-item" id="demoBtn2"><img src="images/car_after.png" class="homeIcon"/>加入彩购车</a>
+      <a href="" class="header-item space-left"><img src="images/heart_after.png" class="homeIcon"/>收藏</a>
+      </div>
+    </div> 
+    </div>
+    </div>
+  
+
+    <!-- 用于清除浮动及间隔 -->
+    <div class="space clear"></div>
+    <!-- 数码7F -->
+    <div class="clear man-clothing">
+    <div class="show-right-part"><!-- 数码左侧显示 -->
+    <div class="show-right">
+      <a href="all-goods.html" class="show-lever seven"></a>
+      <div id="list"><!-- 数码左侧列表显示 -->
+      <a href="" class="text smalle top-blank">智能设备</a>
+      <a href="" class="text smalle top-blank">热卖手机</a>
+      <a href="" class="text smalle">平板电脑</a>
+      <a href="" class="text smalle">华为荣耀</a>
+      <a href="" class="text smalle">平板特价</a>
+      <a href="" class="text smalle">小米特供</a>
+      <a href="" class="text smalle">年终大促</a>
+      <a href="" class="text smalle">魅族手机</a>
+      <a href="" class="text smalle">科技新品</a>
+      <a href="" class="text smalle">酷派大神</a>
+      <a href="" class="text smalle">发烧酷玩</a>
+      <a href="" class="text smalle">iPhone惠</a>
+      <a href="" class="shuma_down"></a>
+      </div>
+    </div>
+    <a href="all-goods.html" class="show-big big-seven"></a>
+    </div>
+    <!-- 数码左侧显示 -->
+    <div class="show-left-part">
+    <div id="show_left">
+      <a class="women show19"><div class="select" title="收藏"></div></a>
+      <div class="name">
+      <a href="" class="text">新一代手机广角镜</a>
+      <h5>￥<span>59.00</span></h5>
+      <a href="javascript:successed()" class="header-item"><img src="images/car_after.png" class="homeIcon"/>加入彩购车</a>
+      <a href="" class="header-item space-left"><img src="images/heart_after.png" class="homeIcon"/>收藏</a>
+      </div>
+    </div>
+    <div id="show_left">
+      <a class="women show20"><div class="select" title="收藏"></div></a>
+      <div class="clear name">
+      <a href="" class="text">三星聚合物13800MA充电宝</a>
+      <h5>￥<span>198.00</span></h5>
+      <a href="javascript:successed()" class="header-item"><img src="images/car_after.png" class="homeIcon"/>加入彩购车</a>
+      <a href="" class="header-item space-left"><img src="images/heart_after.png" class="homeIcon"/>收藏</a>
+      </div>
+    </div>
+    <div id="show_left">
+      <a class="women show21"><div class="select" title="收藏"></div></a>
+      <div class="name">
+      <a href="" class="text">简约弧形笔记本电脑无线鼠标</a>
+      <h5>￥<span>56.00</span></h5>
+      <a href="javascript:successed()" class="header-item"><img src="images/car_after.png" class="homeIcon"/>加入彩购车</a>
+      <a href="" class="header-item space-left"><img src="images/heart_after.png" class="homeIcon"/>收藏</a>
+      </div>
+    </div> 
+    </div>
+    </div>
+  <!-- 用于间隔及清除浮动 -->
+  <div class="space clear"></div>
+  <div class="women_line1 clear"></div>
+  <div class="space clear"></div> 
+  </div>
+  <!-- 底部显示部分 -->
+  <div class="clear down">
+  <div class="down_text"> 
+    <div class="text-show">
+    <span class="big-text">彩购保证</span>
+    <a class="big-text small-text">发票保证</a>
+    <a class="big-text small-text">售后服务</a>
+    <a class="big-text small-text">缺货赔付</a>
+    </div>
+    <div class="text-show">
+    <span class="big-text">支付方式</span>
+    <a class="big-text small-text">货到付款</a>
+    <a class="big-text small-text">新人支付</a>
+    <a class="big-text small-text">支付宝支付</a>
+    </div>
+    <div class="text-show">
+    <span class="big-text">商家服务</span>
+    <a class="big-text small-text">商家入驻</a>
+    <a class="big-text small-text">商家中心</a>
+    <a class="big-text small-text">彩购规则</a>
+    </div>
+    <div class="text-show abc">
+    <img src="images/logoo.png"/>
+    <a class="big-text small-text">第三方账号登录</a>
+    <div class="login-icons">
+    <a href="" class="icon1"></a>
+    <a href="" class="icon2"></a>
+    <a href="" class="icon3"></a>
+    <a href="" class="icon4 last"></a>
+    </div>
+    </div>
+    <div class="recommend-line"><a>Copyright@2015&nbspcolor&nbspshopping</a></div>
+    <div class="design"><a>DesignBy:RedJoy</a></div>
+  </div>
+  </div>
+  <div id="to_top" title="返回顶部"></div>
+  <script type="text/javascript">
+   //    图片切换
+  var curIndex=0; 
+  //时间间隔 单位毫秒 
+  var timeInterval=3500; 
+  var arr=new Array(); 
+  arr[0]="url('images/shuma_bg.png') no-repeat fixed top"; 
+  arr[1]="url('images/man_bg1.jpg') no-repeat fixed top"; 
+  arr[2]="url('images/makeup_bg1.jpg') no-repeat fixed top"; 
+  arr[3]="url('images/food_bg1.jpg') no-repeat fixed top"; 
+  arr[4]="url('images/women_bg1.jpg') no-repeat fixed top"; 
+  arr[5]="url('images/bag_bg1.jpg') no-repeat fixed top"; 
+  arr[6]="url('images/house_bg.jpg') no-repeat fixed top"; 
+
+  setInterval(changeImg,timeInterval); 
+  function changeImg() {
+      var obj=document.getElementById("top-change"); 
+      if (curIndex==arr.length-1)  
+      {  curIndex=0; } 
+      else 
+      {  curIndex+=1; } 
+      obj.style.background=arr[curIndex]; 
+  } 
+       // 实现图片切换
+        var imglength = [];
+        var pic = [];
+        var viewindex = [];
+        for (var i = 0; i < $('[id^=pics]').length; i++) {
+            pic[i] = 'pics' + i;
+            viewindex[i] = 0;
+        }
+        // 遍历获取整个页面中需要切换图片的组数
+        $(function () {
+            for (var i = 0; i < pic.length; i++) {
+                imglength[i] = $('#' + pic[i] + '>img').length;
+                for (var j = 1; j < imglength[i]; j++) {
+                    $('#' + pic[i] + '>img').eq(j).css('display', 'none');
+                }
+            }  
+            setInterval('changeimg()', 3000);
+        })
+        // 按组号遍历其中的图片数量并进行切换
+        function changeimg() {
+            for (var j = 0; j < pic.length; j++) {
+                var tmp = pic[j].replace('pics', '');
+                var imgsize = $('#' + pic[j] + '>img').length;
+                viewindex[tmp]++;
+                if (viewindex[tmp] >= imgsize) { viewindex[tmp] = 0;}
+                if (imgsize <= 1) {//如果图片小于2张，图片不切换
+                  return;}
+                for (var i = 0; i < imgsize; i++) {
+                    $('#' + pic[j] + '>img').eq(i).css('display', 'none');
+                }
+                $('#' + pic[j] + '>img').eq(viewindex[tmp]).fadeIn(500);
+            }
+        }
+         //返回顶部
+          window.onload = function(){
+            var oTop = document.getElementById("to_top");
+            var screenw = document.documentElement.clientWidth || document.body.clientWidth;
+            var screenh = document.documentElement.clientHeight || document.body.clientHeight;
+            oTop.style.left = screenw - oTop.offsetWidth +"px";
+            oTop.style.top = screenh - oTop.offsetHeight + "px";
+            window.onscroll = function(){
+              var scrolltop = document.documentElement.scrollTop || document.body.scrollTop;
+              oTop.style.top = screenh - oTop.offsetHeight + scrolltop +"px";
+            }
+            oTop.onclick = function(){
+              document.documentElement.scrollTop = document.body.scrollTop =0;
+            }
+          }
+  </script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="js/jquery-1.11.2.js" type="text/javascript"></script>
+<script src="js/car.js" type="text/javascript"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/car.css" rel="stylesheet" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>彩购-我的购物车</title>
+</head>
+
+<body>
+    <div class="header" id="header" style="background:#1b1b1b;">
+        <div class="wrap">
+          <div class="meun-bar">
+            <div class="left-part">
+              <a href="index.html" id="caigou"></a>
+              <a href="login-late.html" onclick="javascript:showLogin()" rel="nofollow" class="header-item"><img src="images/car.png" class="homeIcon"/>我的彩购车</a>
+              <a href="" class="header-item"><img src="images/heart.png" class="homeIcon"/>收藏夹</a>
+              <div id="meun-nav">
+                <a href="" class="header-item">商品分类<!-- <img src="images/nav.png" class="navIcon"/> --></a>
+                <span class="arrow"></span>
+                  <div class="header-main-menu">
+                      <table style="overflow:hidden;">
+                        <tr>
+                          <td><a href="#" class="big">女装</a></td>
+                          <td><a href="#" id="size">上衣</a></td>
+                          <td><a href="#" id="size">裤子</a></td>
+                          <!-- <td><a href="#" id="size">裙子</a></td> -->
+                        </tr>
+
+                        <tr>
+                          <td><a href="#" class="big">男装</a></td>
+                          <td><a href="#" id="size">上衣</a></td>
+                          <td><a href="#" id="size">裤子</a></td>
+                          <td><a href="#" id="size">裙子</a></td>
+                          <td><a href="#" id="size">裙子</a></td>
+                          <td><a href="#" id="size">裙子</a></td>
+                          <td><a href="#" id="size">裙子</a></td>
+                        </tr>
+
+                        <tr>
+                          <td><a href="#" class="big">箱包</a></td>
+                          <td><a href="#" id="size">上衣</a></td>
+                          <td><a href="#" id="size">裤子</a></td>
+                          <td><a href="#" id="size">裙子</a></td>
+                        </tr>
+
+                        <tr>
+                          <td><a href="#" class="big">美妆</a></td>
+                          <td><a href="#" id="size">上衣</a></td>
+                          <td><a href="#" id="size">裤子</a></td>
+                          <td><a href="#" id="size">裙子</a></td>
+                        </tr>
+
+                        <tr>
+                          <td><a href="#" class="big">美食</a></td>
+                          <td><a href="#" id="size">上衣</a></td>
+                          <td><a href="#" id="size">裤子</a></td>
+                          <td><a href="#" id="size">裙子</a></td>
+                        </tr>
+
+                        <tr>
+                          <td><a href="#" class="big">家居</a></td>
+                          <td><a href="#" id="size">上衣</a></td>
+                          <td><a href="#" id="size">裤子</a></td>
+                          <td><a href="#" id="size">裙子</a></td>
+                        </tr>
+                        <tr>
+                          <td><a href="#" class="big">数码</a></td>
+                          <td><a href="#" id="size">上衣</a></td>
+                          <td><a href="#" id="size">裤子</a></td>
+                        </tr>
+                      
+                      </table>
+
+                  </div>
+              </div>
+            </div>
+            <div class="mid-search1">
+              <form method="get" action="/search/" class="mid-searching-unit" data-regestered="regestered">
+                <input id="query" type="text" size="27" name="q" autocomplete="off" placeholder="搜索你喜欢的" value="">
+                <a href="#" onclick="return false;" class="go"></a>
+              </form>
+            </div>
+      			<div class="right-part">
+              <div class="login-nav" style="width=200px;">
+                <div id="user-show">
+                  <div ><a href="manage.html"><span class="text" > renjing</span></a></div>
+                  <span class="arrow1"></span>
+                  <div class="user-show-detail">
+                      <img src="images/user-head.png" class="user-show-head">
+                      <div class="user-name-box">
+                          <a href="manage.html" class="user-text user-name">renjing</a>
+                          <a href="manage.html" class="user-text user-name">订单管理</a>
+                      </div>
+                      <a href="manage.html" class="user-text">修改个人信息</a>
+                      <a href="index.html" class="user-text user-out">退出</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+      		</div>
+      	</div>
+    </div>
+  
+    <div class="space clear"></div>
+    <div class="mid-car-box">
+      <div class="cart-title">
+        <div  class="cart-title-left">
+          <ul  class="switch-cart">
+            <li class="btn-switch-cart">
+              <a href="" class="">
+              <em>全部商品</em>
+              <span class="number">73</span>
+              <span class="pipe"></span>
+              </a>
+            </li>
+            <li class="btn-switch-cart">
+              <a href="" class="">
+              <em>降价商品</em>
+              <span class="number">1</span>
+              <span class="pipe"></span>
+              </a>
+            </li>
+            <li class="btn-switch-cart">
+              <a href="" class="">
+              <em>库存紧张</em>
+              <span class="number">1</span>
+              <span class="pipe"></span>
+              </a>
+            </li>
+          </ul>
+          </div>
+          <div class="cart-title-right">已选商品（不含运费）
+            <strong class="price">¥<em>0.00</em></strong>
+            <a  class="submit-btn submit-btn-disabled" style="color:#fff;" href="javascript:success()">结&nbsp;算</a>
+          </div>
+          <div class="wrap-line"><div class="floater" style="width: 132px; left: -1px;"></div>
+        </div>
+        <div class="wrap-line"><div class="floater" style="width: 132px; left: -1px;"></div></div>
+      </div>
+      <form method="get"  data-regestered="regestered" action="order.html">
+          <table class="show-table" cellspacing="0">
+            <tr class="first-tr">
+              <td width="50px"><input name="" type="checkbox" value="" class="checkbox" checked />全选</td>
+              <td width="100px"></td>
+              <td width="250px" class="good-left">商品名称</td>
+              <td wudth="80px" class="good-left">类型</td>
+              <td width="80px">单价（元）</td>
+              <td>数量</td>
+              <td>小计（元）</td>
+              <td>操作</td>
+            </tr>
+            <tr>
+              <td align="right"><input name="" type="checkbox" value="全选" checked/></td>
+              <td><a><img src="images/women_show1.jpg" style="max-width:60px;"></a></td>
+              <td class="good-left"><a href="show.html">田园小碎花复古连衣裙</a></td>
+              <td>衣服</td>
+              <td>79.00</td>
+              <td id="number"><button class="reduce" onclick="javascript:reduce()"></button><input type="text" value="3"/><button class="add"></button></td>
+              <td>79.00</td>
+              <td><a>删除</a></td>
+            </tr>
+            <tr>
+              <td><input name="" type="checkbox" value="全选" checked/></td>
+              <td><a><img src="images/women_show1.jpg" style="max-width:60px;"></a></td>
+              <td class="good-left"><a href="show.html">田园小碎花复古连衣裙</a></td>
+              <td>衣服</td>
+              <td>79.00</td>
+              <td><button class="reduce"></button><input type="text" value="1"/><button class="add"></button></td>
+              <td>79.00</td>
+              <td><a>删除</a></td>
+            </tr>
+            <tr>
+              <td><input name="" type="checkbox" value="全选" checked/></td>
+              <td><a><img src="images/women_show1.jpg" style="max-width:60px;"></a></td>
+              <td class="good-left"><a href="show.html">田园小碎花复古连衣裙</a></td>
+              <td>衣服</td>
+              <td>79.00</td>
+              <td><button class="reduce"></button><input type="text" value="1"/><button class="add"></button></td>
+              <td>79.00</td>
+              <td><a>删除</a></td>
+            </tr>
+            <tr>
+              <td><input name="" type="checkbox" value="全选" checked/></td>
+              <td><a><img src="images/women_show1.jpg" style="max-width:60px;"></a></td>
+              <td class="good-left"><a href="show.html">田园小碎花复古连衣裙</a></td>
+              <td>衣服</td>
+              <td>79.00</td>
+              <td><button class="reduce"></button><input type="text" value="1"/><button class="add"></button></td>
+              <td>79.00</td>
+              <td><a>删除</a></td>
+            </tr>
+            
+          </table>
+          <div class="down-bar"style="float:right;">
+              <div class="list-count">
+                <h3>共<span>2</span>件商品,总计：<span>￥<span>199.00</span>元</span></h3>
+              </div>
+              <input type="submit" value="结算" class="register btn rbtn" style="float:left;height:30px;margin-top:5px;width:80px;">
+          </div>
+        </form>
+      <!-- <div class="float-bar clearfix fixed-bottom has-items" style="position: fixed;">
+      </div> -->
+    </div>
+
+    <!-- 用于间隔及清除浮动 -->
+  <div class="space clear"></div>
+  <div class="women_line1 clear"></div>
+  <div class="clear space"></div> 
+  <!-- 底部显示部分 -->
+  <div class="clear down">
+    <div class="down_text"> 
+      <div class="text-show">
+        <span class="big-text">彩购保证</span>
+        <a class="big-text small-text">发票保证</a>
+        <a class="big-text small-text">售后服务</a>
+        <a class="big-text small-text">缺货赔付</a>
+      </div>
+      <div class="text-show">
+        <span class="big-text">支付方式</span>
+        <a class="big-text small-text">货到付款</a>
+        <a class="big-text small-text">新人支付</a>
+        <a class="big-text small-text">支付宝支付</a>
+      </div>
+      <div class="text-show">
+        <span class="big-text">商家服务</span>
+        <a class="big-text small-text">商家入驻</a>
+        <a class="big-text small-text">商家中心</a>
+        <a class="big-text small-text">彩购规则</a>
+      </div>
+      <div class="text-show abc">
+        <img src="images/logoo.png"/>
+        <div class="login-icons">
+        <a href="" class="icon1"></a>
+        <a href="" class="icon2"></a>
+        <a href="" class="icon3"></a>
+        <a href="" class="icon4 last"></a>
+      </div>
+      </div>
+      <div class="recommend-line"><a>Copyright@2015&nbspcolor&nbspshopping</a></div>
+      <div class="design"><a>DesignBy:RedJoy</a></div>
+    </div>
+  </div>
+  <div id="to_top" title="返回顶部"></div>
+</body>
+</html>
