@@ -1,88 +1,24 @@
 $(function(){
 	var flag=0;
-	$("#option1").click(function(){		
-		if(flag == 0){
-			$(this).css("border","1px solid #e01c1c");
-			flag=1;
-		} 
-		else{
-			$(this).css("border","none");
-			flag=0;
+	var o = {
+		add:function (id){
+			$(id).click(function(){		
+				if(flag == 0){
+					$(this).css("border","1px solid #e01c1c");
+					flag=1;
+				} 
+				else{
+					$(this).css("border","none");
+					flag=0;
+				}
+			});
 		}
-	});
-	$("#option2").click(function(){		
-		if(flag == 0){
-			$(this).css("border","1px solid #e01c1c");
-			flag=1;
-		} 
-		else{
-			$(this).css("border","none");
-			flag=0;
-		}
-	});
-	$("#option3").click(function(){		
-		if(flag == 0){
-			$(this).css("border","1px solid #e01c1c");
-			flag=1;
-		} 
-		else{
-			$(this).css("border","none");
-			flag=0;
-		}
-	});
-	$("#option4").click(function(){		
-		if(flag == 0){
-			$(this).css("border","1px solid #e01c1c");
-			flag=1;
-		} 
-		else{
-			$(this).css("border","none");
-			flag=0;
-		}
-	});
-	$("#option5").click(function(){		
-		if(flag == 0){
-			$(this).css("border","1px solid #e01c1c");
-			flag=1;
-		} 
-		else{
-			$(this).css("border","none");
-			flag=0;
-		}
-	});
+	}
+	o.add(".options");
 	
 	
 });
-// $(function(){
-// var flag=0;
-// function option(){
-// 		if(flag == 0){
-// 			$(abc).css("border","1px solid #e01c1c");
-// 			flag=1;
-// 		} 
-// 		else{
-// 			$(abc).css("border","none");
-// 			flag=0;
-// 		}
-// }
-// function options1(){
-// 	var flag=0;
-// 	var abc=$("#option1"); 
-// 		if(flag == 0){
-// 			$(abc).css("border","1px solid #e01c1c");
-// 			flag=1;
-// 		} 
-// 		else{
-// 			$(abc).css("border","none");
-// 			flag=0;
-// 		}
 
-// 		alert("aaaa");}
-// function options2(){var abc=$("#option2"); function option();}
-// function options3(){	var abc=$("#option3"); function option();}
-// function options4(){	var abc=$("#option4"); function option();}
-// function options5(){	var abc=$("#option5"); function option();}
-// // });
 $(function(){
 	// $("li").each(function());
 	// alert(a);
