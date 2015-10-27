@@ -48,3 +48,9 @@ ul li{
 .clock:hover{background: url('imgs/page2.png') no-repeat 0px -240px;}
 .assistance:hover{background: url('imgs/page2.png') no-repeat 0px -360px;}
 .footer{height:30px;width: 100%;margin:15px auto;text-align: center;}
+#heart{
+	width: 50px;
+	height: 36px;
+	background: url("hearts.jpg") no-repeat;
+	position: absolute;
+}
