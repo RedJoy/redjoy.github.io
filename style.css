@@ -53,4 +53,5 @@ ul li{
 	height: 50px;
 	background: url("imgs/hi.png") no-repeat;
 	position: absolute;
+	z-index:9999;
 }
