@@ -25,5 +25,19 @@
 		<h2>Blog</h2>
 	</a>
 </div>
+<script type="text/javascript">
+window.onload = function  () {
+	var heart = document.getElementById("heart");
+	document.onmousemove = function(e){
+		var ev = e || window.event;
+		var scrTop = document.body.scrollTop || document.documentElement.scrollTop;
+		var scrLeft = document.body.scrollLeft || document.documentElement.scrollLeft;
+		heart.style.left = ev.clientX + scrLeft +10+"px";
+		heart.style.top = ev.clientY + scrTop + 10 +"px";
+	};
+};
+	
+</script>
+
 </body>
 </html>
