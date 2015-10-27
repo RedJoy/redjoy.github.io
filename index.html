@@ -11,13 +11,19 @@
 <div id="heart"></div>
 <div class="head"><a href="https://github.com/RedJoy/"><h1>RedJoy</h1></a></div>
 <div class="big-box">
-	<div class="sel">
-		<ul>
-			<a href="shopping/index.html"><li class="color"></li></a>
-			<a href="turing-page/index.html"><li class="turing"></li></a>
-			<a href="student_page/T&S.html"><li class="clock"></li></a>
-			<a href="clock/index.html"><li class="assistance"></li></a>
-		</ul>
+	<div id="box">
+		<a id="prev">‹</a>
+		<div class="sel" id="img-box">
+			<ul>
+				<a href="shopping/index.html"><li class="color"></li></a>
+				<a href="turing-page/index.html"><li class="turing"></li></a>
+				<a href="student_page/T&S.html"><li class="clock"></li></a>
+				<a href="clock/index.html"><li class="assistance"></li></a>
+				<a href="small-game/index.html"><li class="game"></li></a>
+				<a href="photo-show/index.html"><li class="photo"></li></a>
+			</ul>
+		</div>
+		<a id="next" >›</a>
 	</div>
 </div>
 <div class="footer">
@@ -25,19 +31,7 @@
 		<h2>Blog</h2>
 	</a>
 </div>
-<script type="text/javascript">
-window.onload = function  () {
-	var heart = document.getElementById("heart");
-	document.onmousemove = function(e){
-		var ev = e || window.event;
-		var scrTop = document.body.scrollTop || document.documentElement.scrollTop;
-		var scrLeft = document.body.scrollLeft || document.documentElement.scrollLeft;
-		heart.style.left = ev.clientX + scrLeft +10+"px";
-		heart.style.top = ev.clientY + scrTop + 10 +"px";
-	};
-};
-	
-</script>
+<script type="text/javascript" src="wheel.js"></script>
 
 </body>
 </html>

@@ -7,33 +7,55 @@ h2{font-weight: bolder;font-size: 20px;color:#fff;}
 h2:hover{font-size: 28px;color:#fff;cursor: pointer;}
 
 .big-box{
-	width: 100%;
-	/*height:400px;*/
 	margin: 0 auto;
-	/*margin-top: 100px;*/
 	background: #fff;
+}
+#box{background: #fff;height: 130px;}
+#box:after{
+	content: ".";
+	display: block;
+	visibility: none;
+	height: 0;
+	clear: both;
 }
 .sel{
+	float: left;
 	width: 1200px;
-	height:200px;
-	margin: 0 auto;
-	line-height: 200px;
+	height:130px;
+	left: 25px;
+	line-height: 114px;
+	position: relative;
+	overflow: hidden;
 	top: 150px;
 	text-align: center;
-	position: relative;
 	background: #fff;
 }
-ul{width: 100%;height:144px;background: #fff;/*margin: 100px auto;*/}
-ul li{
-	list-style: none;
+#prev,#next{
+	cursor: pointer;
+	width: 50px;
+	height: 130px;
+	position: relative;
+	display: inline-block;
 	float: left;
+	color:#d74136;
+	font:85px/130px "微软雅黑";
+	background: #fff;
+	top:150px;
+}
+#prev{ left: 20px;}
+#next{ right: -40px;}
+ul{position: absolute;left: 0;top:0;list-style: none;width: 100%;height:144px;background: #fff;/*margin: 100px auto;*/}
+ul li{
+	float: left;
+	width: 280px;
+	height:114px;
+	margin: 10px;
+	list-style: none;
 	position: relative;
 	margin: 10px;
-	/*margin-top: 300px;*/
 	border: transparent;
 	box-shadow: 5px 5px 5px #999;
 	cursor: pointer;
-	/*background: red;*/
 }
 .color,.turing,.clock,.assistance{
 	width: 280px;
@@ -43,14 +65,19 @@ ul li{
 .turing{background: url('imgs/page1.png') no-repeat 0px -120px;}
 .clock{background: url('imgs/page1.png') no-repeat 0px -240px;}
 .assistance{background: url('imgs/page1.png') no-repeat 0px -360px;}
+.photo{background: url('imgs/page1.jpg') no-repeat 0px 0px;}
+.game{background: url('imgs/page1.jpg') no-repeat 0px -120px;}
 .color:hover{background: url('imgs/page2.png') no-repeat 0px 0px;}
 .turing:hover{background: url('imgs/page2.png') no-repeat 0px -120px;}
 .clock:hover{background: url('imgs/page2.png') no-repeat 0px -240px;}
 .assistance:hover{background: url('imgs/page2.png') no-repeat 0px -360px;}
+/*.photo:hover{background: url('imgs/page2.jpg') no-repeat 0px -0px;}*/
+.game:hover{background: url('imgs/page2.jpg') no-repeat 0px -120px;}
 .footer{height:30px;width: 100%;margin:15px auto;text-align: center;}
 #heart{
 	width: 50px;
 	height: 50px;
 	background: url("imgs/hi.png") no-repeat;
 	position: absolute;
+	z-index: 9999;
 }

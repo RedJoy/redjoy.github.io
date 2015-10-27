@@ -1,0 +1,89 @@
+body,h1,a,h3{
+	margin:0;
+	padding:0;
+}
+body{
+	margin: 0 auto;
+}
+a{
+	text-decoration: none;
+}
+h1{
+	font-family: "Cooper Std";
+	margin-top: 20px;
+	color:#776E65;
+	width: 100%;
+	text-align: center;
+}
+.game-start{
+	color: #fff;
+	display: block;
+	width: 250px;
+	height:50px;
+	text-align: center;
+	background-color: #E8559B;
+	border-radius: 5px;
+	font:18px/50px "Comic Sans MS";
+	margin:10px auto;
+}
+.game-start:hover{
+	background-color: #F16FA9;
+}
+.show-box{
+	width: 290px;
+	margin:5px auto;
+	position: relative;
+}
+.clrfix:after{
+	display: none;
+	content: ".";
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.score-box,.best-box{
+	background-color: #BBADA0;
+	width: 80px;
+	height: 60px;
+	text-align: center;
+	color:#fff;
+	display: inline-block;
+	// float: left;
+	// margin-left:100px;
+	font:bolder 20px/30px "Franklin GotHic Demi Cond";
+	border-radius: 5px;
+}
+.score-box{
+	margin-left: 100px;
+}
+.score-title,.best-title,.score,.best{
+		width: 100%;
+		display: block;
+}
+.game-board{
+	margin: 20px auto;
+	width: 350px;
+	height: 350px;
+	background-color: #BBADA0;
+	border-radius: 5px;
+	color:#fff;
+	text-align: center;
+	font:bolder 35px/75px "Franklin GotHic Demi Cond";
+	position: relative;
+	// padding: 10px;
+}
+.game-cell{
+	background-color: #CDC1B4;
+	width: 75px;
+	height: 75px;
+	border-radius: 5px;
+	position: absolute;
+}
+.number-cell{
+    border-radius: 5px;
+    position:absolute;
+    width: 75px;
+    height: 75px;
+	text-align: center;
+	font:bolder 35px/75px "Franklin GotHic Demi Cond";
+}
