@@ -51,6 +51,6 @@ ul li{
 #heart{
 	width: 50px;
 	height: 36px;
-	background: url("hearts.jpg") no-repeat;
+	background: url("imgs/hi.png") no-repeat;
 	position: absolute;
 }
